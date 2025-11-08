@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "meu_token_123";
+const VERIFY_TOKEN = "verify_token_bot";
 
 app.get("/webhook", (req, res) => {
   const mode = req.query["hub.mode"];
